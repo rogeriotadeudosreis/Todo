@@ -24,9 +24,11 @@ public class DBService {
 		Todo t1 = new Todo(null, "Estudar", "Estudar Spring Boot 2 e Angular 11",
 				LocalDateTime.parse("05/05/2021 12:00", formatter), false);
 		Todo t2 = new Todo(null, "Estudar", "Estudar banco de Dados",
-				LocalDateTime.parse("05/05/2021 12:00", formatter), false);
+				LocalDateTime.parse("05/05/2021 12:00", formatter), true);
 		Todo t3 = new Todo(null, "Estudar", "Estudar padrão de projeto Build",
 				LocalDateTime.parse("05/05/2021 12:00", formatter), false);
+		Todo t4 = new Todo(null, "Estudar", "Estudar auth",
+				LocalDateTime.parse("05/05/2021 12:00", formatter), true);
 
 		todoRepository.saveAll(Arrays.asList(t1, t2, t3));
 
