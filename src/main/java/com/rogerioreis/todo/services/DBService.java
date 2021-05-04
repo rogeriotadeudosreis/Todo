@@ -30,7 +30,7 @@ public class DBService {
 		Todo t4 = new Todo(null, "Estudar", "Estudar auth",
 				LocalDateTime.parse("05/05/2021 12:00", formatter), true);
 
-		todoRepository.saveAll(Arrays.asList(t1, t2, t3));
+		todoRepository.saveAll(Arrays.asList(t1, t2, t3, t4));
 
 	}
 

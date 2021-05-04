@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.rogerioreis.todo.entities.Todo;
 import com.rogerioreis.todo.repositories.TodoRepository;
+import com.rogerioreis.todo.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class TodoService {
@@ -17,18 +18,19 @@ public class TodoService {
 
 	public Todo findById(Integer id) {
 		Optional<Todo> obj = repository.findById(id);
-		return obj.orElse(null);
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! Id: " + id + " Tipo: " + Todo.class.getName()));
 	}
 
 	public List<Todo> findAllOpen() {
 		List<Todo> list = repository.findAllOpen();
 		return list;
 	}
-	
-	public List<Todo> findAllClose(){
+
+	public List<Todo> findAllClose() {
 		List<Todo> list = repository.findAllClose();
 		return list;
- 	}
+	}
 
 	public List<Todo> findAll() {
 		List<Todo> list = repository.findAll();
@@ -41,7 +43,7 @@ public class TodoService {
 	}
 
 	public void delete(Integer id) {
-		repository.deleteById(id);		
+		repository.deleteById(id);
 	}
 
 }
