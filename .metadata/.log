@@ -683,3 +683,60 @@ java.lang.NullPointerException
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:41.836
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:41.837
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6fe5e229[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=555)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:41.839
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:41.862
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.603
+!MESSAGE Boot LS startup time from start to initialized: 3757ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.725
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KezunjQDisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.728
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.730
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.731
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.731
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.732
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KezunjQD => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.743
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.750
+!MESSAGE buffering callback sts4.classpath.KezunjQD Todo false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:45.751
+!MESSAGE executing callback sts4.classpath.KezunjQD 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:37:46.198
+!MESSAGE executing callback sts4.classpath.KezunjQD SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:38:06.217
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KezunjQD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:38:06.218
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.KezunjQD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:38:06.219
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 16:38:06.221
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KezunjQD => OK

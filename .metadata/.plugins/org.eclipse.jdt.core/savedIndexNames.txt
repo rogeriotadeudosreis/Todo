@@ -73,7 +73,6 @@ INDEX VERSION 1.131+C:\ambienteDeEstudoAds4\cursoUdemy\.metadata\.plugins\org.ec
 3954192343.index
 309999679.index
 192207583.index
-3770225493.index
 551057302.index
 629249537.index
 1832909849.index

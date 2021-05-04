@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/*
+ * Criando entidade no banco
+ * */
 @Entity
 public class Todo implements Serializable {
 
