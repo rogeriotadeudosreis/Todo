@@ -1,5 +1,0 @@
-package com.rogerioreis.todo.resources.exceptions;
-
-public class StandartError {
-
-}
