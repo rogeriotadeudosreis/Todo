@@ -38,5 +38,12 @@ public class TodoResource {
 		return ResponseEntity.ok().body(list);
 		
 	}
+	
+	@GetMapping
+	public ResponseEntity<List<Todo>> listAll(){
+		List<Todo> list = service.findAll();
+		return ResponseEntity.ok().body(list);
+		
+	}
 
 }
