@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\ambienteDeEstudoAds4\cursoUdemy\.metadata\.plugins\org.eclipse.jdt.core
+3770225493.index

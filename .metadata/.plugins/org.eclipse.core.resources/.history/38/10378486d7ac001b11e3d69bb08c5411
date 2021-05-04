@@ -1,0 +1,5 @@
+package com.rogerioreis.todo.resources;
+
+public class ResourceExceptionHandler {
+
+}
