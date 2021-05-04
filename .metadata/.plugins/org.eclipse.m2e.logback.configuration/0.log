@@ -1730,3 +1730,56 @@ Caused by: java.nio.file.NoSuchFileException: C:\ambienteDeEstudoAds4\cursoUdemy
 2021-05-04 16:31:00,717 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-05-04 16:31:00,717 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-05-04 16:31:00,717 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ambienteDeEstudoAds4\cursoUdemy\Todo\src\test\resources
+2021-05-04 16:32:33,109 [Worker-174: Updating Maven Dependencies] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to remove com/rogerioreis/Todo/0.0.1-SNAPSHOT/Todo-0.0.1-SNAPSHOT.pom
+java.nio.file.NoSuchFileException: C:\ambienteDeEstudoAds4\cursoUdemy\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\_0.si
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:120)
+	at java.base/java.nio.channels.FileChannel.open(FileChannel.java:292)
+	at java.base/java.nio.channels.FileChannel.open(FileChannel.java:345)
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:391)
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:288)
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:232)
+	at org.apache.lucene.store.LockValidatingDirectoryWrapper.sync(LockValidatingDirectoryWrapper.java:62)
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4446)
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2865)
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2970)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:2935)
+	at org.apache.maven.index.DefaultIndexerEngine.remove(DefaultIndexerEngine.java:190)
+	at org.apache.maven.index.DefaultIndexer.deleteArtifactsFromIndex(DefaultIndexer.java:143)
+	at org.apache.maven.index.DefaultNexusIndexer.deleteArtifactFromIndex(DefaultNexusIndexer.java:362)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.removeDocument(NexusIndexManager.java:629)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:760)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:824)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:990)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2021-05-04 16:33:19,097 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-05-04 16:33:55,621 [Worker-3: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rogerioreis:Todo:0.0.1-SNAPSHOT @ C:\ambienteDeEstudoAds4\cursoUdemy\Todo\pom.xml.
+2021-05-04 16:33:56,107 [Worker-5: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rogerioreis:Todo:0.0.1-SNAPSHOT @ C:\ambienteDeEstudoAds4\cursoUdemy\Todo\pom.xml.
+2021-05-04 16:33:58,646 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-04 16:33:58,647 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-04 16:33:58,652 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-04 16:33:58,679 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-04 16:33:58,683 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-04 16:33:58,683 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-04 16:33:58,683 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ambienteDeEstudoAds4\cursoUdemy\Todo\src\test\resources
+2021-05-04 16:34:01,866 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rogerioreis:Todo:0.0.1-SNAPSHOT @ C:\ambienteDeEstudoAds4\cursoUdemy\Todo\pom.xml.
+2021-05-04 16:34:02,474 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-04 16:34:02,474 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-04 16:34:02,482 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-04 16:34:02,520 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-04 16:34:02,524 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-04 16:34:02,524 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-04 16:34:02,524 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ambienteDeEstudoAds4\cursoUdemy\Todo\src\test\resources
+2021-05-04 16:34:05,089 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-04 16:34:05,089 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-05-04 16:34:05,091 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-04 16:34:05,154 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-04 16:34:05,157 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
