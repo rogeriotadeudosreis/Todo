@@ -1,5 +1,7 @@
 package com.rogerioreis.todo.services;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
@@ -17,18 +19,18 @@ public class DBService {
 	private TodoRepository todoRepository;
 
 
-	public void instanciaBaseDeDados() {
+	public void instanciaBaseDeDados() throws ParseException {
 
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 		Todo t1 = new Todo(null, "Estudar", "Estudar Spring Boot 2 e Angular 11",
-				LocalDateTime.parse("05/05/2021 12:00", formatter), false);
+				sdf.parse("05/05/2021"), false);
 		Todo t2 = new Todo(null, "Estudar", "Estudar banco de Dados",
-				LocalDateTime.parse("05/05/2021 12:00", formatter), true);
+				sdf.parse("05/05/2021"), true);
 		Todo t3 = new Todo(null, "Estudar", "Estudar padrão de projeto Build",
-				LocalDateTime.parse("05/05/2021 12:00", formatter), false);
+				sdf.parse("05/05/2021"), false);
 		Todo t4 = new Todo(null, "Estudar", "Estudar auth",
-				LocalDateTime.parse("05/05/2021 12:00", formatter), true);
+				sdf.parse("05/05/2021"), true);
 
 		todoRepository.saveAll(Arrays.asList(t1, t2, t3, t4));
 
