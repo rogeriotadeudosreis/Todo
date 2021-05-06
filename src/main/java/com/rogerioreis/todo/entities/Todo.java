@@ -26,7 +26,7 @@ public class Todo implements Serializable {
 	private String titulo;
 	private String descricao;
 	
-	@JsonFormat
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private Date dataParaFinalizar;
 	private Boolean finalizado = false;
 
