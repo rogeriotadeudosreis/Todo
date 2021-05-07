@@ -14,9 +14,9 @@ const routes: Routes = [
     component: FinalizadosComponent,
   },
   {
-    path: 'create',
+    path: "create",
     component: CreateComponent,
-  }
+  },
 ];
 
 @NgModule({
