@@ -1,7 +1,7 @@
 <form>
   <h1>CRIANDO NOVO TO-DO</h1>
   <mat-form-field class="data-finalizar" appearance="fill">
-    <mat-label>DATA PARA FINALIZAR:</mat-label>
+    <mat-label>DATA PARA FINALIZAR</mat-label>
     <input [(ngModel)]="todo.dataParaFinalizar" name="todo.dataParaFinalizar" matInput [matDatepicker]="dp3" disabled />
     <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
     <mat-datepicker #dp3 disabled="false"></mat-datepicker>
